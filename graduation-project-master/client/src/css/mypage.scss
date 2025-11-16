@@ -1,0 +1,151 @@
+.mypage-container {
+  max-width: 400px;
+  margin: 80px auto 50px;
+  padding: 0 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+
+  .menu-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+
+      &:hover {
+     
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+       border-radius: 50%;
+        margin-right: 15px;
+      border: 1px solid #f3f2f2;
+        object-fit: cover;
+      }
+
+      .menu-text {
+        font-weight: 500;
+        color: #333;
+      }
+
+      /* 게스트 배지 */
+      .guest-badge {
+        margin-left: 10px;
+        font-size: 0.8rem;
+        color: #fff;
+        background-color: #f39c12;
+        padding: 2px 6px;
+        border-radius: 6px;
+      }
+    }
+
+    /* 메뉴 헤더 스타일 */
+    .menu-header {
+      font-weight: 600;
+      background-color: #f5f5f5;
+      cursor: default;
+    }
+
+    /* 편집 폼 */
+    .edit-form {
+      display: flex;
+      flex-direction: column;
+      input {
+        margin-bottom: 10px;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 0.95rem;
+      }
+      .form-buttons {
+        display: flex;
+        justify-content: space-between;
+        button {
+          padding: 8px 15px;
+          border-radius: 6px;
+          border: none;
+          cursor: pointer;
+          font-weight: 500;
+        }
+      }
+    }
+
+    
+    
+}
+/* 버튼 스타일 */
+.edit-btn {
+  background-color: #3498db;
+  color: #fff;
+}
+.convert-btn {
+display: block;       // block으로 만들어 가로 폭 자연스럽게
+width: fit-content;   // 내용에 맞춰 폭 조절
+width: 100%;
+background-color: #ff4b6e;
+color: #fff;
+margin:  auto 0; // 상단 10px, 가운데 정렬
+padding: 14px 16px;   // 패딩 조절
+border-radius: 8px;
+border: none;
+cursor: pointer;
+font-size: 16px;
+font-weight: 500;
+text-align: center;
+
+}
+
+.logout-btn {
+ display: block;       // block으로 만들어 가로 폭 자연스럽게
+width: fit-content;   // 내용에 맞춰 폭 조절
+width: 100%;
+background-color: #ff4b6e;
+color: #fff;
+margin:  auto 0; // 상단 10px, 가운데 정렬
+padding: 14px 16px;   // 패딩 조절
+border-radius: 8px;
+border: none;
+cursor: pointer;
+font-size: 16px;
+font-weight: 500;
+text-align: center;
+}
+}
+
+/* 반응형 */
+@media (max-width: 480px) {
+  .mypage-container {
+    padding: 0 10px;
+
+    .menu-card {
+      .menu-item {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+
+        img {
+          width: 35px;
+          height: 35px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

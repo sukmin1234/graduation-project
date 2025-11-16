@@ -1,0 +1,158 @@
+/* budget.scss */
+.budget-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
+  height: 70vh;
+  box-sizing: border-box;
+}
+
+.budget-form {
+  background: #fff;
+  padding: 80px 45px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ececec;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+    padding: 10px;
+    color: #333;
+  }
+
+  .input-group {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    label {
+      font-weight: 500;
+      font-size: 1rem;
+      color: #555;
+      flex: 1;
+      text-align: left;
+    }
+
+    input {
+      flex: 2;
+      padding: 10px 15px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      font-size: 1rem;
+      text-align: right;
+    }
+
+    span {
+      margin-left: 8px;
+      font-weight: 500;
+    }
+
+    .people-counter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex: 2;
+
+      button {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: none;
+        background: #f0f0f0;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+          background: #ddd;
+        }
+      }
+
+      span {
+        font-size: 1.2rem;
+        width: 40px;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff4b6e;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+/* =========================================
+   📱 반응형
+========================================= */
+
+/* 992px 이하 – 태블릿 */
+@media (max-width: 992px) {
+  .budget-main {
+    height: 65vh;
+    padding: 30px 16px;
+    box-sizing: border-box;
+  }
+
+  .budget-form {
+    padding: 60px 35px;
+    max-width: 380px;
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 24px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+
+      label {
+        font-size: 0.95rem;
+      }
+
+      input {
+        font-size: 0.95rem;
+        padding: 8px 12px;
+      }
+
+      .people-counter button {
+        width: 34px;
+        height: 34px;
+        font-size: 1.1rem;
+      }
+
+      .people-counter span {
+        font-size: 1.05rem;
+      }
+    }
+
+    .submit-btn {
+      font-size: 1rem;
+      padding: 10px 0;
+    }
+  }
+}
+
+
+
